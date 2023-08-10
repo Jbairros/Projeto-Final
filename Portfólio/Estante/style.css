@@ -1,0 +1,134 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(234, 209, 200);
+    color: rgb(18, 7, 3);
+    text-align:justify;
+    width: 85%;
+    margin:auto;
+
+}
+section {
+    /* espaçamento dentro da seção */
+    padding-left: 256px;
+    padding-right: 256px;
+    padding-bottom: 64px;
+    padding-top: 64px;
+}   
+/* Titulo, texto e Paragrafo*/
+
+table{
+           width: 100%;
+ }
+           
+td{
+           background-color: rgb(251, 255, 0);
+           border-width: 2px;
+           border-style: solid;
+           border-color: black;
+           border-radius: 5px;
+           padding-left: 3px;
+           text-align: center;
+ }
+ 
+th{
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 5px;
+        padding-left: 3px;
+        text-align: center;
+}
+    
+tr{
+ 
+    background-color: rgb(207, 8, 218);
+}
+
+
+p{
+           text-align: justify;
+           text-indent: 50%;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: rgb(27, 2, 15);
+}
+
+a:link { 
+    color: rgb(255, 238, 1);/* link normal*/
+} 
+a:visited {
+    color: rgb(46, 237, 32);/* link visitado*/
+}
+a:hover {
+    color: rgb(243, 35, 20);/* mouse sobre link*/
+}    
+a:active {
+    color: black; /* link selecionado*/
+}    
+
+img{
+    width: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+.bookTitle {
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+       #sectionHP  {
+         background-color: chocolate
+}
+       #sectionIE  {
+        background-color: rgb(231, 16, 16);
+
+}
+       #sectionCrepusculo {
+        background-color: rgb(240, 243, 34);
+
+}
+       #sectionOSDI  {
+
+            background-color: rgb(45, 242, 130);
+ }
+ #header{
+     background-color: rgb(185, 11, 11);
+     color: rgb(58, 242, 58);
+     padding: 20px;
+     margin-bottom: 0px;
+     border-radius: 0 0 0 0;
+}
+
+#yourLibrary{
+    text-indent: 0px;
+    text-align: center;
+}
+
+#sumary{
+    background-color: rgb(5, 123, 27);
+    color: blue;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 0 0 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    background-color: rgb(237, 13, 58);
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}

@@ -1,0 +1,145 @@
+#sobre, #servicos, #portfolio, #contato {
+    padding: 10rem 0;
+}
+
+.bgimage {
+    height: 100vh;
+    position: relative;
+    background: url("images/baloes-na-capadocia-como-e.jpg");
+    background-size: cover;
+}
+
+.heroTitle {
+    font-size: 4.5rem;
+}
+
+.heroDesc {
+    font-size: 4rem;
+}
+
+.heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    
+}
+/* Imagem sobre Mim */
+
+.aboutImage {
+    width: 100px;
+
+}
+
+.servicesText.card {
+    height: 165px;
+    padding: 0 2rem;
+    cursor: pointer;
+    
+}
+
+.servicesIcon {
+    height: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+.cardTitle {
+    text-align: center;
+}
+
+.card:hover .servicesIcon {
+     color:#700098;
+}
+
+.servicesText:hover {
+    border: 3px solid hsl(0, 93%, 49%);
+}
+
+
+/* estilização do Cabeçalho*/
+
+.navbar {
+    height: 12vh;
+    
+    background: rgb(4,11,98);
+    background: linear-gradient(
+        170deg, 
+        rgba(4,11,98,1) 16%, 
+        rgba(189,178,4,1) 55%, 
+        rgba(251,0,0,1) 69%, 
+        rgba(1,7,44,1) 83%
+        );   
+      
+
+}
+
+
+
+.navbar a {
+    color: rgba(229, 230, 237, 0.943);
+    padding: 0.5rem;
+}
+
+.navbar a:hover {
+    background-color: gold;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+/* aula 3: Icones seção contato*/
+
+.contactIcon {
+    font-size: 2.0rem;
+    color: rgb(255, 4, 0);
+}
+
+/* Footer */
+
+footer {
+    background: rgb(34,132,195);
+    background: linear-gradient(
+    0deg, 
+    rgba(34,132,195,1) 34%, 
+    rgba(253,187,45,1) 60%
+    );
+}
+.footerIcon {
+   font-size: 2rem;
+   color: rgb(34,132,195);
+}
+
+.footerIcon:hover {
+    color: rgb(1, 2, 3);
+}
+
+.footerDev {
+    background-color: rgba(255, 71, 4, 0.776);
+    background: rgb(34,132,195);
+background: linear-gradient(
+    0deg, 
+    rgba(34,132,195,1) 100%, 
+    rgba(253,187,45,1) 100%
+    );
+
+}
+
+/* Efeito de GlassMorphino */
+
+.glass {
+   position: absolute;
+   height: 40%;
+
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.7px);
+-webkit-backdrop-filter: blur(10.7px);
+}

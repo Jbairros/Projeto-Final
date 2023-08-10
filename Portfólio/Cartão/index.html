@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de visita</title>
+      <style>
+        body {
+            background-color: aqua;
+        }
+
+        .frame {
+            position: absolute;
+            background-color: darkmagenta;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            margin-top: -200px;
+            margin-left: -200px;
+            box-shadow: 8px 16px 16px rgb(0, 0, 0.6);
+            border-radius: 6px;
+        }
+
+        .frame, 
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flip-me {
+            position: absolute;
+            top: 20%;
+            left: 85%;
+            font-size: 20px;
+            transform: rotate(-90deg);
+        }
+
+        .front h1 {
+            font-size: 2.5rem;
+            margin: 1rem 3rem;
+            color: rgb(38, 255, 0);
+        }
+        
+        p {
+            position: absolute;
+            top: 60%;
+            left: 10%;
+            color: rgb(240, 248, 12);
+        }
+        .card:hover .flip {
+            transform: rotateX(190deg) translate3d(0,0,0);
+        }
+        .flip {
+            transform-style:preserve-3d;
+            transition: all 0.7s ease-in-out;
+            perspective: 1000px;
+        }
+        
+        .front,
+        .back {
+            -webkit-backface-visibility: hidden;
+            width: 100%;
+            height: 100%;
+            background-color: blueviolet;
+        }
+        
+        .card .back {
+            transform: rotateX(-180deg);
+            position: absolute;
+            top: 10;
+            left: 10;
+        }
+        
+        .back {
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        .back h2 {
+            font-size: 2rem;
+            color: deeppink;
+        }
+        .back h3 {
+            font-size: 1.8rem;
+            color: aqua;
+        }
+        
+        .network > a > img {
+            width: 32px;
+        }
+
+        
+      .network > a > img:hover {
+        cursor: pointer;
+        width: 42px;
+
+      }
+</style> 
+</head>
+<body>
+    <div class="frame">
+    <div class="card">
+    <div class="flip">
+    <div class="front">
+       <h1>Olá!</h1>
+       <p class="flip-me">Flip</p>
+    </div>   
+    
+       
+       <div class="back">
+         <h2>Jeferson</h2>
+         <h3>Metalurgico</h3>
+        
+
+         <div class="network">
+            <a href="https://github.com/Jbairros" target="_blank">
+               <img src="images/github.svg" alt="Logo Github"/>
+            </a> 
+            <a href="https://www.linkedin.com/in/j%C3%A9ferson-bairros-dos-santos-ba2992246/" target="_blank">  
+               <img src="images/linkedin.svg" alt="Logo Linkedin"/>
+            </a>   
+            <a href="" target="_blank">   
+               <img src="images/instagram.svg" alt="Logo Instagram"/> 
+            </a>
+    </div>
+    </div>  
+    </div>   
+    </div>
+    </div>
+</body>
+</html>
